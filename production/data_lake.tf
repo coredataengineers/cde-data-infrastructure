@@ -31,3 +31,4 @@ resource "aws_s3_bucket" "waziri_api_ingestion" {
     Managed_by  = "Terraform"
   }
 }
+
