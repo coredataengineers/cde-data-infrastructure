@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "example" {
-  bucket = "cde-test-cde-test-najeeb"
+  bucket = "cde-test-cde-test"
 
   tags = {
-    Team        = "Data Engineering Team"
+    Team        = "Data Engineering"
     Environment = "Production"
     Service     = "Airflow"
     Managed_by  = "Terraform"
