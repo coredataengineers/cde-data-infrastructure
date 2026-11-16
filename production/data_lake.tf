@@ -19,3 +19,13 @@ resource "aws_s3_bucket" "api_ingestion" {
     Managed_by  = "Terraform"
   }
 }
+
+resource "aws_s3_bucket" "example" {
+  bucket = "group-17-habeeb-lake-tf"
+
+  tags = {
+    Team        = "DevOps"
+    Environment = "Production"
+    Service     = "Airbyte"
+  }
+}
