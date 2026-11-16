@@ -10,12 +10,12 @@ resource "aws_s3_bucket" "demo" {
 }
 
 resource "aws_s3_bucket" "api_ingestion" {
-  bucket= "cde-braze-api-ingestion"
+  bucket = "cde-braze-api-ingestion"
 
   tags = {
-    Team   = "Data Engineering"
+    Team        = "Data Engineering"
     Environment = "Production"
-    Service   = "Airflow"
+    Service     = "Airflow"
     Managed_by  = "Terraform"
   }
 }
