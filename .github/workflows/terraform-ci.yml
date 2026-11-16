@@ -5,8 +5,8 @@ on:
       - "**.tf"
 
 jobs:
-  ci:
-    name: ci
+  enforce_configuration_styling:
+    name: terraform-linter
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
