@@ -12,13 +12,13 @@ resource "aws_ssm_parameter" "airbyte_password" {
 
 
 resource "aws_db_instance" "default" {
-  allocated_storage    = 10
-  db_name              = "airbyte"
-  identifier           = "cde-new-db"
-  engine               = "postgres"
-  engine_version       = "18"
-  instance_class       = "db.t3.micro"
-  username             = "airbyte"
-  password             = aws_ssm_parameter.airbyte_password.value
-  skip_final_snapshot  = true
+  allocated_storage   = 10
+  db_name             = "airbyte"
+  identifier          = "cde-new-db"
+  engine              = "postgres"
+  engine_version      = "18"
+  instance_class      = "db.t3.micro"
+  username            = "airbyte"
+  password            = aws_ssm_parameter.airbyte_password.value
+  skip_final_snapshot = true
 }
