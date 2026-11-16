@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "demo" {
   tags = {
     Team        = "Data Engineering"
     Environment = "Production"
-    Service     = "Airflow"
+    Service     = "Airflow Instane"
     Managed_by  = "Terraform"
   }
 }
