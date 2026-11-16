@@ -6,11 +6,11 @@ resource "aws_s3_bucket" "demo_s3" {
     Environment = "Production"
 
   }
-# }
-# resource "aws_s3_bucket_acl" "example" {
-#   bucket = aws_s3_bucket.demo_s3.id
-#   #acl    = "private"
-# 
+  # }
+  # resource "aws_s3_bucket_acl" "example" {
+  #   bucket = aws_s3_bucket.demo_s3.id
+  #   #acl    = "private"
+  # 
 }
 
 resource "aws_s3_bucket_versioning" "versioning_example" {
