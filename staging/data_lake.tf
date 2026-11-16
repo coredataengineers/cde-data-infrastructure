@@ -1,8 +1,8 @@
-resource "aws_s3_bucket" "ingestion" {
-  bucket = "cde-staging-data-ingestion"
+resource "aws_s3_bucket" "aderas_ingestion" {
+  bucket = "cde-aderas-data-ingestion"
 
   tags = {
-    Name        = "My bucket"
+    team        = "data management"
     Environment = "Dev"
   }
 }
