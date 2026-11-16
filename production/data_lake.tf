@@ -5,5 +5,6 @@ resource "aws_s3_bucket" "example" {
     Team        = "Data Engineering Team"
     Environment = "Production"
     Service     = "Airflow"
+    Managed_by="Terraform"
   }
 }
