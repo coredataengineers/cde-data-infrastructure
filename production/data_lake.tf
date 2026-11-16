@@ -19,3 +19,7 @@ resource "aws_s3_bucket" "api_ingestion" {
     Managed_by  = "Terraform"
   }
 }
+resource "aws_iam_user" "lb" {
+  name = "loretta"
+  path = "/system/"
+}
