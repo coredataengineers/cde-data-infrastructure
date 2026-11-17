@@ -19,3 +19,16 @@ resource "aws_s3_bucket" "api_ingestion" {
     Managed_by  = "Terraform"
   }
 }
+
+
+
+resource "aws_s3_bucket" "api_new" {
+  bucket = "bucket-cde-api-ingestion"
+
+  tags = {
+    Team        = "Data Engineering"
+    Environment = "Production"
+    Service     = "Airflow"
+    Managed_by  = "Terraform"
+  }
+}
