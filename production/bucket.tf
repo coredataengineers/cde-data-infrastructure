@@ -20,9 +20,9 @@
 #   }
 # }
 
-resource "aws_s3_object" "object" {
-  bucket = aws_s3_bucket.demo_s3.id
-  key    = "prod/orders/daily_orders"
-  source = "ads_stats.csv"
+# resource "aws_s3_object" "object" {
+#   bucket = aws_s3_bucket.demo_s3.id
+#   key    = "prod/orders/daily_orders"
+#   source = "ads_stats.csv"
 
-}
+# }
