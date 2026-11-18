@@ -9,8 +9,11 @@ resource "aws_s3_bucket" "demo" {
   }
 }
 
-resource "aws_s3_bucket" "api_ingestion" {
-  bucket = "cde-braze-api-ingestion"
+
+
+
+resource "aws_s3_bucket" "api_new" {
+  bucket = "bucket-cde-api-ingestion"
 
   tags = {
     Team        = "Data Engineering"
