@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "demo" {
-  bucket = "cde-test-cde-test-1"
+  bucket = "ppdated_cde-test-cde-test-1"
 
   tags = {
     Team        = "Data Engineering"
@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "demo" {
 }
 
 resource "aws_s3_bucket" "api_ingestion" {
-  bucket = "cde-braze-api-ingestion"
+  bucket = "updated_cde-braze-api-ingestion"
 
   tags = {
     Team        = "Data Engineering"
