@@ -26,3 +26,5 @@ resource "aws_s3_object" "object" {
   source = "ads_stats.csv"
 
 }
+
+
