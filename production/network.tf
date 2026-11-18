@@ -1,10 +1,10 @@
 resource "aws_vpc" "group_2_oge_terraform_vpc" {
-  cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "default"
+  cidr_block           = "10.0.0.0/16"
+  instance_tenancy     = "default"
   enable_dns_hostnames = true
 
   tags = {
-    Team = "Devops Team"
+    Team        = "Devops Team"
     Environment = "Production"
   }
 
@@ -15,7 +15,7 @@ resource "aws_subnet" "group_2_oge_terraform_subnet_a" {
   cidr_block = "10.0.1.0/28"
 
   tags = {
-    Team = "Devops Team"
+    Team        = "Devops Team"
     Environment = "Production"
     
   }
@@ -28,7 +28,7 @@ resource "aws_subnet" "group_2_oge_terraform_subnet_b" {
   cidr_block = "10.0.1.16/28"
 
   tags = {
-    Team = "Devops Team"
+    Team        = "Devops Team"
     Environment = "Production"
     
   }
@@ -41,7 +41,7 @@ resource "aws_internet_gateway" "group_2_oge_terraform_internet_gateway" {
   vpc_id = aws_vpc.group_2_oge_terraform_vpc.id
 
     tags = {
-    Team = "Devops Team"
+    Team        = "Devops Team"
     Environment = "Production"
 
   }
@@ -58,7 +58,7 @@ resource "aws_route_table" "group_2_oge_terraform_route_table" {
  gateway_id = aws_internet_gateway.group_2_oge_terraform_internet_gateway.id
  }
    tags = {
-    Team = "Devops Team"
+    Team        = "Devops Team"
     Environment = "Production"
 
   }
