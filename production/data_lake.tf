@@ -1,16 +1,5 @@
-resource "aws_s3_bucket" "demo" {
-  bucket = "cde-test-cde-test-1"
-
-  tags = {
-    Team        = "Data Engineering"
-    Environment = "Production"
-    Service     = "Airflow"
-    Managed_by  = "Terraform"
-  }
-}
-
-resource "aws_s3_bucket" "api_ingestion" {
-  bucket = "cde-braze-api-ingestion"
+resource "aws_s3_bucket" "cde_test" {
+  bucket = "cde-test-cde-test-7"
 
   tags = {
     Team        = "Data Engineering"
