@@ -11,7 +11,7 @@ resource "aws_vpc" "group_2_oge_terraform_vpc" {
 }
 # subnet1
 resource "aws_subnet" "group_2_oge_terraform_subnet_a" {
-  vpc_id     = aws_vpc.group_2_oge_terraform_vpc.id
+  vpc_id     = aws_vpc.group_2_oge_terraform_vpc.id  
   cidr_block = "10.0.1.0/28"
 
   tags = {
