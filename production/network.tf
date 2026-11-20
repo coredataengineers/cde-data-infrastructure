@@ -69,3 +69,19 @@ resource "aws_route_table_association" "group_2_oge_terraform_route_table_associ
   subnet_id      = aws_subnet.group_2_oge_terraform_subnet_a.id
   route_table_id = aws_route_table.group_2_oge_terraform_route_table.id
 }
+
+# private route table for subnet2
+resource "aws_route_table" "group_2_oge_terraform_private_route_table" {
+  vpc_id = aws_vpc.group_2_oge_terraform_vpc.id
+
+  tags = {
+    Team        = "Devops Team"
+    Environment = "Production"
+  }
+}
+
+# route table association for subnet2
+resource "aws_route_table_association" "group_2_oge_terraform_route_table_association_b" {
+  subnet_id      = aws_subnet.group_2_oge_terraform_subnet_b.id
+  route_table_id = aws_route_table.group_2_oge_terraform_private_route_table.id
+}
